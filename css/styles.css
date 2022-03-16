@@ -16,6 +16,10 @@ html {
   font-size: 62.5%;
 }
 
+body {
+  font-family: "Manrope", sans-serif;
+}
+
 /* Frontend Mentor Style */
 .attribution {
   font-size: 11px;
