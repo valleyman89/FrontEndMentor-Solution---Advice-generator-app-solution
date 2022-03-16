@@ -94,3 +94,22 @@ body {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+/* SVG Icon */
+.icon {
+  fill: var(--color-accent);
+}
+
+.icon-container {
+  align-items: center;
+  background: var(--color-accent);
+  border-radius: 100%;
+  display: inline-flex;
+  height: 64px;
+  justify-content: center;
+  width: 64px;
+}
+
+.icon-container:hover {
+  box-shadow: 0 0 35px var(--color-accent);
+}
