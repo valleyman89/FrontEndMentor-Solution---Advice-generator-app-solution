@@ -31,7 +31,7 @@ html {
 
 body {
   background-color: var(--color-secondary);
-
+  overflow: scroll;
   font-family: "Manrope", sans-serif;
 }
 
@@ -79,7 +79,7 @@ p::after {
 .box {
   background-color: var(--color-neutral-gray);
   border-radius: 15px;
-  /* padding: 0 2.5rem; */
+  padding: 0 2.5rem;
   text-align: center;
   flex: 0 0 auto;
 }
