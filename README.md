@@ -36,7 +36,7 @@ This is a solution to the [Advice generator app challenge on Frontend Mentor](ht
 - CSS custom properties
 - Flexbox
 - Mobile-first workflow
-- [Normaliz](https://necolas.github.io/normalize.css//) - modern, HTML5-ready alternative to CSS resets
+- [Normalize](https://necolas.github.io/normalize.css//) - modern, HTML5-ready alternative to CSS resets
 
 ### What I learned
 
