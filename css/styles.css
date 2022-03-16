@@ -15,12 +15,23 @@
   box-sizing: border-box;
 }
 
+/* Required styles: Frontend Mentor Style */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
 /* Typography */
 html {
   font-size: 62.5%;
 }
 
 body {
+  background-color: var(--color-secondary);
+
   font-family: "Manrope", sans-serif;
 }
 
@@ -36,7 +47,9 @@ p {
   color: var(--color-primary);
   font-size: 2.9rem;
   font-weight: 800;
+  margin-bottom: 1rem;
 }
+
 p::before {
   content: open-quote;
 }
@@ -45,38 +58,37 @@ p::after {
   content: close-quote;
 }
 
-/* Design */
-body {
-  background-color: var(--color-secondary);
+@media screen and (min-width: 768px) {
+  p {
+    padding: 3rem;
+  }
 }
 
 /* Container */
 .container {
-  max-width: 375px;
-  margin: 0 auto;
+  margin: 0;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   flex-direction: column;
+  min-height: 100vh;
   justify-content: center;
   align-items: center;
-  align-content: center;
-}
-
-@media screen and (min-width: 800px) {
-  .container {
-    max-width: 1140px;
-  }
 }
 
 /* Box */
 .box {
   background-color: var(--color-neutral-gray);
   border-radius: 15px;
-  flex-direction: column;
-  padding: 0 2.5rem;
+  /* padding: 0 2.5rem; */
   text-align: center;
   flex: 0 0 auto;
-  margin: 25vh;
+}
+
+@media screen and (max-width: 768px) {
+  .box {
+    margin: 0 3.5rem;
+    padding: 0 1rem;
+  }
 }
 
 .box > h1 {
@@ -86,13 +98,15 @@ body {
 .divider {
   margin: 2rem;
 }
-/* Required styles: Frontend Mentor Style */
-.attribution {
-  font-size: 11px;
-  text-align: center;
+
+.divider {
+  content: url(../images/pattern-divider-mobile.svg);
 }
-.attribution a {
-  color: hsl(228, 45%, 44%);
+
+@media screen and (min-width: 768px) {
+  .divider {
+    content: url(../images/pattern-divider-desktop.svg);
+  }
 }
 
 /* SVG Icon */
@@ -108,6 +122,8 @@ body {
   height: 64px;
   justify-content: center;
   width: 64px;
+  top: 25px;
+  position: relative;
 }
 
 .icon-container:hover {
