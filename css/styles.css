@@ -1,0 +1,26 @@
+:root {
+  --color-primary: #cee3e9;
+  --color-secondary: #1f2632;
+  --color-accent: #52ffa8;
+  --color-neutral-blue: #4e5d73;
+  --color-neutral-gray: #323a49;
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+/* Typography */
+html {
+  font-size: 62.5%;
+}
+
+/* Frontend Mentor Style */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
