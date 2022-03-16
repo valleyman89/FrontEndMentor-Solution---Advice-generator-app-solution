@@ -74,21 +74,19 @@ p::after {
   justify-content: center;
   align-items: center;
 }
-
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 100%;
+  }
+}
 /* Box */
 .box {
   background-color: var(--color-neutral-gray);
   border-radius: 15px;
-  padding: 0 2.5rem;
+  margin: 0 3.5rem;
+  padding: 0 1rem;
   text-align: center;
   flex: 0 0 auto;
-}
-
-@media screen and (max-width: 768px) {
-  .box {
-    margin: 0 3.5rem;
-    padding: 0 1rem;
-  }
 }
 
 .box > h1 {
